@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Portfolio</title>
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="ключевые слова, фразы" />
+
+    <!-- Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" rel="stylesheet">
+
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://github.com/avmokhanova/Potfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Верстка сайтов" />
+    <meta property="og:image" content="https://github.com/avmokhanova/Potfolio/opengraph.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div class="mobile-menu">
+      <div class="nav-icon__wrapper-menu">
+        <img src="./img/header/x.png" alt="close">
+      </div>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item"><a href="#skills">Навыки</a></li>
+        <li class="mobile-menu__list-item"><a href="#works">Портфолио</a></li>
+        <li class="mobile-menu__list-item"><a href="#timeline">Как я работаю</a></li>
+        <li class="mobile-menu__list-item"><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <div class="contacts-social">
+          <a class="contacts-item" href="https://t.me/Mokhanova">
+            <img src="./img/social/telegram.png" alt="telegram" />
+          </a>
+          <a class="contacts-item" href="https://vk.com/a.mokhanova">
+            <img src="./img/social/vk.png" alt="vk" />
+          </a>
+          <!-- <a class="contacts-item" href="#">
+            <img src="./img/social/facebook.png" alt="facebook" />
+          </a> -->
+          <!-- <a class="contacts-item" href="#">
+            <img src="./img/social/instagram.png" alt="instagram" />
+          </a> -->
+          <a class="contacts-item" href="https://wa.me/+79879037687">
+            <img src="./img/social/whatsapp.png" alt="whatsapp" />
+          </a>
+        </div>
+        <p>
+          <a href="mailto:av.mokhanova@gmail.com" class="link"
+            >av.mokhanova@gmail.com</a
+          >
+        </p>
+      </div>
+      
+    </div>
+    <div class="header-top">
+      <div class="header-top__nav-mobil">
+        <h1 class="logo">HTML Верстальщик</h1>
+        <div class="nav-icon__wrapper">
+          <img src="./img/header/burger.png" alt="menu">
+        </div>
+      
+        </div>
+      <div class="container">
+        
+          <div class="header-top__nav">
+            <div class="header-top__nav-list" id="header-menu">
+              <ul>
+                <li class="header-top__nav-list-item">
+                  <a href="#skills" class="header-top__nav-list-link">Навыки</a>
+                </li>
+                <li class="header-top__nav-list-item">
+                  <a href="#works" class="header-top__nav-list-link">Портфолио</a>
+                </li>
+                <li class="header-top__nav-list-item">
+                  <a href="#timeline" class="header-top__nav-list-link">Как я работаю</a>
+                </li>
+                <li class="header-top__nav-list-item">
+                  <a href="#contacts" class="header-top__nav-list-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-top__icon">
+              <a href="https://www.linkedin.com/in/anastasiia-mokhanova-2a744319b/" class="header-top__icon-item" target="_blank">
+                <img src="./img/header-nav/linkedin.png" alt="in-icon" />
+              </a>
+              <a href="https://github.com/avmokhanova" class="header-top__icon-item" target="_blank">
+                <img src="./img/header-nav/github.png" alt="git-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <header class="header" id="top">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__row-info">
+            <div class="header__title-wrapper">
+              <h1 class="title-1 line">Анастасия Моханова</h1>
+            </div>
+            <div class="header__discription">
+              <p>
+                Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                Работаю с соблюдением сроков и выполнением ТЗ.
+              </p>
+            </div>
+            <div class="header__button">
+              <a href="#skills" class="button">Познакомиться</a>
+              <a href="#contacts" class="button button--light">Контакты</a>
+            </div>
+          </div>
+          <div class="header__info-img">
+            <img src="./img/header/info-img.png" alt="info-img" />
+            <div class="header__discription">
+              <p>
+                Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                Работаю с соблюдением сроков и выполнением ТЗ.
+              </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="header-img">
+        <img src="./img/header/header-img.jpg" alt="header-img" />
+      </div>
+    </header>
+
+    <section class="about" id="skills">
+      <div class="container">
+        <div class="about__row">
+          <div class="about__skills">
+            <div class="about__title-wrapper">
+              <h3 class="title-3">Что я умею:</h3>
+            </div>
+            <ul class="about__skills-list">
+              <li class="about__skills-list-item">
+                pixel perfect, полное соответствие макету
+              </li>
+              <li class="about__skills-list-item">верстаю с сеткой или без</li>
+              <li class="about__skills-list-item">
+                адаптивная верстка под мобильные устройства
+              </li>
+              <li class="about__skills-list-item">
+                оптимизация по retina экраны
+              </li>
+              <li class="about__skills-list-item">с Bootstrap и без него</li>
+            </ul>
+          </div>
+          <div class="about__contacts">
+            <div class="about__title-wrapper">
+              <h3 class="title-3">На связи:</h3>
+            </div>
+            <div class="contacts-social">
+              <a class="contacts-item" href="https://t.me/Mokhanova" target="_blank">
+                <img src="./img/social/telegram.png" alt="telegram" />
+              </a>
+              <a class="contacts-item" href="https://vk.com/a.mokhanova" target="_blank">
+                <img src="./img/social/vk.png" alt="vk" />
+              </a>
+              <!-- <a class="contacts-item" href="#">
+                <img src="./img/social/facebook.png" alt="facebook" />
+              </a> -->
+              <!-- <a class="contacts-item" href="#">
+                <img src="./img/social/instagram.png" alt="instagram" />
+              </a> -->
+              <a class="contacts-item" href="https://wa.me/+79879037687" target="_blank">
+                <img src="./img/social/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+            <p>
+              <a href="mailto:av.mokhanova@gmail.com" class="link"
+                >av.mokhanova@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <div class="works__title">
+          <h2 class="title-2 line">Портфолио</h2>
+        </div>
+        <div class="mix-block">
+          <!-- <div class="mix-block__btn">
+              <button type="button" data-filter = "all">Все работы</button>
+              <button type="button" data-filter = ".html">HTML верстка</button>
+              <button type="button" data-filter = ".wp">WordPress</button>
+          </div> -->
+          <div class="works__cards" id="mix-cards">
+            <div class="card mix wp">
+              <a
+                href="http://h98790jj.beget.tech/forest-travel/main.html"
+                class="card__link" target="_blank">
+                <div class="card__img">
+                  <img src="./img/card/forest-travel.jpg" alt="card_1" />
+                  <span>Смотреть проект</span>
+                </div>
+                <div class="card__title">
+                  <h3 class="card__name">Верстка “Форест тревел”</h3>
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="card mix html wp">
+              <a
+                href="http://h98790jj.beget.tech/Unit/index.html"
+                class="card__link" target="_blank">
+                <div class="card__img">
+                  <img src="./img/card/unit.jpg" alt="card_2" />
+                  <span>Смотреть проект</span>
+                </div>
+                <div class="card__title">
+                  <h3 class="card__name">Сайт приложения “Юнит”</h3>
+                  <p>Верстка лендинга</p>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="card mix html wp">
+              <a href="#" class="card__link" target="_blank">
+                <div class="card__img">
+                  <img src="./img/card/card_3.png" alt="card_3" />
+                  <span>Смотреть проект</span>
+                </div>
+                <div class="card__title">
+                  <h3 class="card__name">Верстка “Мир Авто”</h3>
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <div class="card mix wp">
+              <a href="#" class="card__link" target="_blank">
+                <div class="card__img">
+                  <img src="./img/card/card_4.png" alt="card_4" />
+                  <span>Смотреть проект</span>
+                </div>
+                <div class="card__title">
+                  <h3 class="card__name">Верстка “Мир Авто”</h3>
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div>
+            <div class="card mix html">
+              <a href="#" class="card__link" target="_blank">
+                <div class="card__img">
+                  <img src="./img/card/card_5.png" alt="card_5" />
+                  <span>Смотреть проект</span>
+                </div>
+                <div class="card__title">
+                  <h3 class="card__name">Верстка “Мир Авто”</h3>
+                  <p>Верстка многостраничного сайта</p>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline__title">
+          <h2 class="title-2 line">Как я работаю</h2>
+        </div>
+        <div class="timeline__process">
+          <div class="timeline__process-item">
+            <div class="timeline__process-title">
+              <h4 class="title-4 line">Оцениваю макет</h4>
+            </div>
+            
+            <p>
+              Оцениваю объем работы, сложность, &nbsp;нюансы. Задаю вопросы.
+            </p>
+            <span>Время: 2 часа </span>
+          </div>
+          <div class="timeline__process-item">
+            <div class="timeline__process-title">
+              <h4 class="title-4 line">ТЗ, смета и график работ</h4>
+            </div>
+            <p>
+              Согласовываем техническое задание и график работ по проекту.
+              Осмечиваю стоимость по &nbsp;этапам работы.
+            </p>
+            <span>Время: 2 - 4 часа</span>
+          </div>
+          <div class="timeline__process-item">
+            <div class="timeline__process-title">
+              <h4 class="title-4 line">Вы держите руку на пульсе</h4>
+            </div>
+            <p>
+              Выдаю клиенту доступ к GitHub репозиторию<br>и доскеTrello. Вы в
+              любое время можете&nbsp;видеть актуальное состояние проекта и
+              задач.
+            </p>
+          </div>
+          <div class="timeline__process-item">
+            <div class="timeline__process-title">
+              <h4 class="title-4 line">Выполняю каждый этап</h4>
+            </div>
+            <p>
+              Поочередно выполняю каждый этап работы. Передаю результаты.
+              Заказчик производит поэтапную оплату.
+            </p>
+          </div>
+          <div class="timeline__process-item">
+            <div class="timeline__process-title">
+              <h4 class="title-4 line">Финальное ревью проекта</h4>
+            </div>
+            <p>
+              Проект готов. Финальное ревью и полировка &nbsp;до идеального
+              состояния. Передаю файлы &nbsp;проекта, заливаю сайт на хостинг
+              заказчика.
+            </p>
+            <span>Время: 2 - 4 часа</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          <h2 class="title-2 line">Контакты</h2>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__source">
+            <p>
+              Если вы ищите специалиста по верстке сайтов или frontend
+              разработчика в команду для работы над проектом — напишите мне.
+            </p>
+            <ul class="contacts__source-list">
+              <li class="contacts__source-list-item">
+                <span class="source">Email</span
+                ><a href="mailto:av.mokhanova@gmail.com" class="link" target="_blank"
+                  >av.mokhanova@gmail.com</a
+                >
+              </li>
+              <!-- <li class="contacts__source-list-item">
+                <span class="source">Телефон</span
+                ><a href="tel:+79879037687" class="link">+7 (987) 903-76-87</a>
+              </li> -->
+            </ul>
+            <div class="contacts-social">
+              <a class="contacts-item" href=" https://t.me/Mokhanova" target="_blank">
+                <img src="./img/social/telegram.png" alt="telegram" />
+              </a>
+              <a class="contacts-item" href="https://vk.com/a.mokhanova" target="_blank">
+                <img src="./img/social/vk.png" alt="vk" />
+              </a>
+              <!-- <a class="contacts-item" href="#">
+                <img src="./img/social/facebook.png" alt="facebook" />
+              </a>
+              <a class="contacts-item" href="#">
+                <img src="./img/social/instagram.png" alt="instagram" />
+              </a> -->
+              <a class="contacts-item" href="https://wa.me/+79879037687" target="_blank">
+                <img src="./img/social/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+          <div class="contacts__form">
+            <form action="#" class="form">
+              <div class="form__item">
+                <span class="fake-placeholder">Ваш Email</span>
+                <input class="form__field email" name="email" type="email">
+              </div>
+              <div class="form__item">
+                <span class="fake-placeholder">Сообщение</span>
+                <textarea class="form__field" name="message"></textarea>
+              </div>
+              <div class="form__item">
+                <input class="button" type="submit" value="Отправить">
+              </div>
+          </form>
+          <div id="answer"></div>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copyright">
+          <p>© 2023 — Анастасия Моханова</p>
+        </div>
+        <div class="footer__description">
+          <p>
+            Веб-разработчик из Самары, занимаюсь версткой и созданием сайтов.
+          </p>
+          <p>
+            Этот сайт сделала в рамках прохождения обучения по верстке на курсах
+            от <a href="https://webcademy.ru/" class="link" target="_blank">WebCademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a href="#top" class="backtop-btn" id="backtop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM385 231c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V193.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 119c9.4-9.4 24.6-9.4 33.9 0L385 231z"/></svg></a>
+    <!-- библиотека jQuery -->
+    <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <!-- библиотека JQuery -->
+    <script src="./libs/pageNav/nav.js"></script>
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./libs/jqueryValidate/jquery.validate.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- mixitUp -->
+    <script src="./libs/mixitup/mixitup.min.js"></script>
+    <!-- custom script -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
